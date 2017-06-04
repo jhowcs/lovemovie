@@ -1,4 +1,4 @@
-package br.com.jhowcs.lovemovie.feature.movie.popular.model
+package br.com.jhowcs.lovemovie.feature.movie.model
 
 import com.google.gson.annotations.SerializedName
 
