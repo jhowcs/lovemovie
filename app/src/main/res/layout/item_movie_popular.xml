@@ -1,17 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="8dp">
+    android:layout_marginBottom="@dimen/cv_movie_margim_bottom"
+    android:layout_marginLeft="@dimen/cv_movie_margim_left"
+    android:layout_marginRight="@dimen/cv_movie_margim_right"
+    android:layout_marginTop="@dimen/cv_movie_margim_top">
 
-    <TextView
-        android:id="@+id/txtMovieTitle"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceListItem"
-        tools:text="@tools:sample/full_names" />
+        android:layout_height="wrap_content">
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/imgPoster"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/img_movie_poster_height"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txtMovieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgPoster"
+            android:layout_marginLeft="@dimen/txt_movie_margin_left"
+            android:layout_marginRight="@dimen/txt_movie_margin_right"
+            android:layout_marginTop="@dimen/txt_movie_title_margin_top"
+            android:maxLines="2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            tools:text="Batman v Superman: Dawn of Justice" />
+
+        <TextView
+            android:id="@+id/txtReleaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtMovieTitle"
+            android:layout_marginLeft="@dimen/txt_movie_margin_left"
+            android:layout_marginRight="@dimen/txt_movie_margin_right"
+            android:layout_marginTop="@dimen/txt_movie_release_date_margin_top"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorYellow"
+            tools:text="@tools:sample/date/ddmmyy" />
+
+        <TextView
+            android:id="@+id/txtVoteAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtReleaseDate"
+            android:layout_marginLeft="@dimen/txt_movie_margin_left"
+            android:layout_marginRight="@dimen/txt_movie_margin_right"
+            android:layout_marginTop="@dimen/txt_movie_vote_margin_top"
+            android:layout_marginBottom="@dimen/txt_movie_vote_margin_bottom"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            tools:text="vote: 9.6" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
