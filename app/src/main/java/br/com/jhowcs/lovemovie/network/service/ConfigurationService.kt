@@ -1,5 +1,11 @@
 package br.com.jhowcs.lovemovie.network.service
 
-/**
- * Created by jonathan on 6/7/17.
- */
+import br.com.jhowcs.lovemovie.feature.configuration.Configuration
+import retrofit2.Call
+import retrofit2.http.GET
+
+interface ConfigurationService {
+
+    @GET("configuration")
+    fun getConfiguration(): Call<Configuration>
+}
