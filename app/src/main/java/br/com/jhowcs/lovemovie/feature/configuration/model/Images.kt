@@ -1,4 +1,4 @@
-package br.com.jhowcs.lovemovie.feature.configuration
+package br.com.jhowcs.lovemovie.feature.configuration.model
 
 import com.google.gson.annotations.SerializedName
 
