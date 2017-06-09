@@ -16,7 +16,9 @@
             android:id="@+id/imgPoster"
             android:layout_width="match_parent"
             android:layout_height="@dimen/img_movie_poster_height"
-            tools:src="@mipmap/ic_launcher" />
+            tools:src="@mipmap/ic_launcher"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
 
         <TextView
             android:id="@+id/txtMovieTitle"
@@ -26,8 +28,9 @@
             android:layout_marginLeft="@dimen/txt_movie_margin_left"
             android:layout_marginRight="@dimen/txt_movie_margin_right"
             android:layout_marginTop="@dimen/txt_movie_title_margin_top"
-            android:maxLines="2"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:maxLines="3"
+            android:textColor="#453932"
+            android:textSize="@dimen/txt_movie_title_size"
             android:textStyle="bold"
             tools:text="Batman v Superman: Dawn of Justice" />
 
